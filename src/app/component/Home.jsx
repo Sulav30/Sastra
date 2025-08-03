@@ -1,3 +1,11 @@
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <>
+      <div className="">
+        <div>
+          <img src="/homecover.jpg" alt="homecover" className="object-fit" />
+        </div>
+      </div>
+    </>
+  );
 }

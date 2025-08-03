@@ -1,7 +1,7 @@
 export default function page() {
   return (
     <>
-      <div className="bg-stone-500 text-black p-4 leading-loose space-y-3">
+      <div className="bg-stone-500 text-black p-4 leading-loose space-y-3 ">
         <p>
           At sastra, we want you to be completely satisfied with your purchase.
           If you receive a damaged product, we offer a hassle-free exchange
@@ -25,10 +25,10 @@ export default function page() {
           <p>
             If any damage is seen during the check time, we will gladly exchange
             the product with the same product.
-            <p>
-              Please ensure that the product is unused and in its original
-              packaging with all tags attached.
-            </p>
+          </p>
+          <p>
+            Please ensure that the product is unused and in its original
+            packaging with all tags attached.
           </p>
         </div>
         <div>
@@ -49,10 +49,10 @@ export default function page() {
           <p>
             To initiate a return, please contact our customer service within the
             3-day check time period.
-            <p>
-              Our team will guide you through the return process and provide you
-              with the necessary instructions for returning the product.
-            </p>
+          </p>
+          <p>
+            Our team will guide you through the return process and provide you
+            with the necessary instructions for returning the product.
           </p>
         </div>
         <div>
@@ -60,14 +60,14 @@ export default function page() {
           <p>
             Shipping costs for returning the product due to damage will be borne
             by Sastra.
-            <p>
-              We reserve the right to reject any returns that do not meet our
-              return policy criteria.
-            </p>
-            <p>
-              If you have any questions or need further assistance, please feel
-              free to contact us at @sastraofficialnp.
-            </p>
+          </p>
+          <p>
+            We reserve the right to reject any returns that do not meet our
+            return policy criteria.
+          </p>
+          <p>
+            If you have any questions or need further assistance, please feel
+            free to contact us at @sastraofficialnp.
           </p>
         </div>
         <h3 className="font-semibold text-center ">
