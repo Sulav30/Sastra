@@ -53,7 +53,7 @@ export default function page() {
 
   return (
     <>
-      <div className="min-h-screen px-6 py-10 bg-white text-black ">
+      <div className="min-h-screen px-6 py-10 bg-white text-black font-serif">
         <h1 className="text-4xl font-bold text-center mb-6">Accessories</h1>
         <div className="text-lg font-semibold mb-4">
           Showing {accessories.length} results
@@ -81,7 +81,7 @@ export default function page() {
               <img
                 src={accessory.imgUrl}
                 alt={accessory.name}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-200 cursor-pointer rounded-lg"
               />
               <h2 className="font-semibold text-lg mt-4">{accessory.name}</h2>
               <p className="text-gray-800">{accessory.price}</p>

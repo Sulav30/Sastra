@@ -10,14 +10,18 @@ library.add(fas, far, fab);
 export default function Footer() {
   return (
     <>
-      <footer className="flex  items-center justify-center p-4 gap-2 ">
+      <footer className="flex  items-center justify-center p-4 gap-5 font-serif text-white bg-stone-500 w-full h-auto">
         <p className="flex justify-center items-center">
           2025 Sastra. All rights reserved.
         </p>
-        <span className="gap-2 flex justify-center items-center">
-          <Link href="/policy/shipping-policy">Shipping Policy</Link>
-          <Link href="/policy/refund-policy">Refund Policy</Link>
-        </span>
+        <p className=" flex justify-center items-center gap-5 ">
+          <span className="hover:underline hover:text-black">
+            <Link href="/policy/shipping-policy">Shipping Policy</Link>
+          </span>
+          <span className="hover:underline hover:text-black">
+            <Link href="/policy/refund-policy">Refund Policy</Link>
+          </span>
+        </p>
         <div>
           <Link href="https://www.facebook.com/">
             <FontAwesomeIcon icon="fa-brands fa-facebook" />

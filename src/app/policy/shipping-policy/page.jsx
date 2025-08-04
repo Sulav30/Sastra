@@ -1,12 +1,12 @@
 export default function page() {
   return (
     <>
-      <div className="leading-loose text-black p-4 bg-stone-500 space-y-3">
-        <span className="">
+      <div className="bg-white text-black px-15 py-10 space-y-5 font-serif text-lg tracking-wide ">
+        <p className="">
           Thank you for choosing Wastra ! We strive to provide you with a
           seamless shopping experience, including fast and reliable delivery of
           your orders.
-        </span>
+        </p>
         <div>
           <h3 className=" font-semibold underline ">Order Processing:</h3>
           <p>
@@ -60,7 +60,7 @@ export default function page() {
           </p>
         </div>
         <div>
-          <h3 className=" font-semibold underline text-center">Note:</h3>
+          <h3 className=" font-semibold underline ">Note:</h3>
           <p>Shipping times may vary during peak seasons and holidays.</p>
           <p>
             We do not ship to P.O. boxes. Please provide a physical address for

@@ -1,7 +1,7 @@
 export default function page() {
   return (
     <>
-      <div className="bg-stone-500 text-black p-4 leading-loose space-y-3 ">
+      <div className="bg-white text-black px-15 py-10 space-y-5 font-serif text-lg tracking-wide">
         <p>
           At sastra, we want you to be completely satisfied with your purchase.
           If you receive a damaged product, we offer a hassle-free exchange
@@ -56,7 +56,7 @@ export default function page() {
           </p>
         </div>
         <div>
-          <h3 className="font-semibold underline text-center">Note:</h3>
+          <h3 className="font-semibold underline">Note:</h3>
           <p>
             Shipping costs for returning the product due to damage will be borne
             by Sastra.
@@ -70,7 +70,7 @@ export default function page() {
             free to contact us at @sastraofficialnp.
           </p>
         </div>
-        <h3 className="font-semibold text-center ">
+        <h3 className="font-semibold text-center text-xl ">
           Thank you for shopping at Sastra!
         </h3>
       </div>

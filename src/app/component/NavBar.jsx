@@ -3,29 +3,20 @@ import Link from "next/link";
 export default function NavBar() {
   return (
     <>
-      <nav className="flex justify-center items-center gap-15 p-3 bg-stone-700 text-white  w-full">
-        <Link href="/" className="hover:text-pink-400 hover:underline">
+      <nav className="flex justify-center items-center space-x-10 p-1 bg-stone-500 text-white  w-full text-lg font-serif">
+        <Link href="/" className="hover:text-black ">
           Home
         </Link>
-        <Link
-          href="/collection/t-shirts"
-          className="hover:text-pink-400 hover:underline"
-        >
+        <Link href="/collection/tshirts" className="hover:text-black ">
           T-Shirts
         </Link>
-        <Link
-          href="/collection/hoodies"
-          className="hover:text-pink-400 hover:underline"
-        >
+        <Link href="/collection/hoodies" className="hover:text-black ">
           Hoodies
         </Link>
-        <Link
-          href="/collection/accessories"
-          className="hover:text-pink-400 hover:underline"
-        >
+        <Link href="/collection/accessories" className="hover:text-black ">
           Accessories
         </Link>
-        <Link href="/about" className="hover:text-pink-400 hover:underline">
+        <Link href="/about" className="hover:text-black ">
           About
         </Link>
       </nav>

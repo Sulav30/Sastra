@@ -3,88 +3,64 @@ import { useState } from "react";
 
 const initialHoodies = [
   {
-    name: "Oversized Uncaged Tee",
-    price: "रु 2,000",
-    imageUrl: "/t-shirts/tshirt1.jpg",
+    name: "Oversized Galaxy Hoodie",
+    price: "रु 3,600",
+    imageUrl: "/hoodies/hoodie1.png",
     addedAt: "2025-07-30",
   },
   {
-    name: "Oversized Danfe Tee",
-    price: "रु 1,400",
-    imageUrl: "/t-shirts/tshirt2.jpg",
+    name: "Oversized Butterfly Hoodie",
+    price: "रु 3,550",
+    imageUrl: "/hoodies/hoodie2.png",
     addedAt: "2025-07-29",
   },
   {
-    name: "Oversized Royal Rumble Tee",
-    price: "रु 1,900",
-    imageUrl: "/t-shirts/tshirt-3.jpg",
+    name: "Oversized Royal Dragon Hoodie",
+    price: "रु 3,900",
+    imageUrl: "/hoodies/hoodie3.png",
     addedAt: "2025-07-28",
   },
   {
-    name: "Oversized Skull Reaper Tee",
-    price: "रु 1,800",
-    imageUrl: "/t-shirts/tshirt4.png",
+    name: "Oversized Calm Sun Hoodie",
+    price: "रु 3,800",
+    imageUrl: "/hoodies/hoodie4.png",
     addedAt: "2025-07-10",
   },
   {
-    name: "Oversized Danfe Tee",
-    price: "रु 1,400",
-    imageUrl: "/t-shirts/tshirt2.jpg",
+    name: "Oversized Charm Skeleton Hoodie",
+    price: "रु 3,950",
+    imageUrl: "/hoodies/hoodie5.png",
     addedAt: "2025-08-02",
   },
   {
     name: "Oversized Danfe Tee",
-    price: "रु 1,400",
-    imageUrl: "/t-shirts/tshirt2.jpg",
+    price: "रु 3,400",
+    imageUrl: "/hoodies/hoodie1.png",
     addedAt: "2025-08-01",
   },
   {
     name: "Oversized Danfe Tee",
-    price: "रु 1,400",
-    imageUrl: "/t-shirts/tshirt2.jpg",
+    price: "रु 3,500",
+    imageUrl: "/hoodies/hoodie1.png",
     addedAt: "2025-05-31",
   },
   {
     name: "Oversized Danfe Tee",
-    price: "रु 1,400",
-    imageUrl: "/t-shirts/tshirt2.jpg",
+    price: "रु 3,550",
+    imageUrl: "/hoodies/hoodie1.png",
     addedAt: "2025-05-15",
   },
   {
     name: "Oversized Danfe Tee",
-    price: "रु 1,400",
-    imageUrl: "/t-shirts/tshirt2.jpg",
+    price: "रु 3,650",
+    imageUrl: "/hoodies/hoodie1.png",
     addedAt: "2025-05-01",
   },
   {
     name: "Oversized Danfe Tee",
-    price: "रु 1,400",
-    imageUrl: "/t-shirts/tshirt2.jpg",
+    price: "रु 3,300",
+    imageUrl: "/hoodies/hoodie1.png",
     addedAt: "2025-04-20",
-  },
-  {
-    name: "Oversized Danfe Tee",
-    price: "रु 1,400",
-    imageUrl: "/t-shirts/tshirt2.jpg",
-    addedAt: "2025-04-10",
-  },
-  {
-    name: "Oversized Danfe Tee",
-    price: "रु 1,400",
-    imageUrl: "/t-shirts/tshirt2.jpg",
-    addedAt: "2025-04-01",
-  },
-  {
-    name: "Oversized Uncaged Tee",
-    price: "रु 2,000",
-    imageUrl: "/t-shirts/tshirt1.jpg",
-    addedAt: "2025-07-30",
-  },
-  {
-    name: "Oversized Uncaged Tee",
-    price: "रु 2,000",
-    imageUrl: "/t-shirts/tshirt1.jpg",
-    addedAt: "2025-07-30",
   },
 ];
 
@@ -117,7 +93,7 @@ export default function page() {
   };
 
   return (
-    <div className="min-h-screen px-6 py-10 bg-white text-black">
+    <div className="min-h-screen px-6 py-10 bg-white text-black font-serif">
       <h1 className="text-4xl font-bold text-center mb-6">Hoodies</h1>
       <div className="text-lg font-semibold mb-4">
         Showing {hoodies.length} results
@@ -145,7 +121,7 @@ export default function page() {
             <img
               src={hoodie.imageUrl}
               alt={hoodie.name}
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover hover:scale-105 transition-transform duration-200 cursor-pointer rounded-lg"
             />
             <h2 className="font-semibold text-lg mt-4">{hoodie.name}</h2>
             <p className="text-gray-800">{hoodie.price}</p>
