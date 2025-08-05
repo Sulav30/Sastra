@@ -3,7 +3,11 @@ export default function Home() {
     <>
       <div className="">
         <div>
-          <img src="/homecover.jpg" alt="homecover" className="object-fit" />
+          <img
+            src="/homecover.jpg"
+            alt="homecover"
+            className="object-fit w-full h-screen"
+          />
         </div>
       </div>
     </>

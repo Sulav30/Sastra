@@ -1,9 +1,9 @@
 export default function page() {
   return (
     <>
-      <div className="bg-white text-black px-15 py-10 space-y-5 font-serif text-lg tracking-wide ">
+      <div className="bg-black text-white px-15 py-10 space-y-5 font-serif text-lg tracking-wide ">
         <p className="">
-          Thank you for choosing Wastra ! We strive to provide you with a
+          Thank you for choosing Sastra ! We strive to provide you with a
           seamless shopping experience, including fast and reliable delivery of
           your orders.
         </p>
@@ -71,7 +71,7 @@ export default function page() {
             free to contact us at @sastraofficialnp.
           </p>
         </div>
-        <h3 className=" font-semibold  text-center">
+        <h3 className=" font-semibold  text-center text-pink-500">
           Thank you for choosing Sastra!
         </h3>
       </div>

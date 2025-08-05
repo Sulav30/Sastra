@@ -1,7 +1,7 @@
 export default function page() {
   return (
     <>
-      <div className=" space-y-5  font-serif text-black px-15 py-10  bg-white text-lg tracking-wide">
+      <div className=" space-y-5  font-serif text-white px-30 py-10  bg-black text-lg tracking-wide">
         <h2 className="font-semibold underline text-center text-xl ">
           Sastra: Redefine Street Style with Attitude
         </h2>

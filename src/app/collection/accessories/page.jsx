@@ -1,23 +1,27 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
 const initialAccessories = [
   {
+    id: "sastra-durag",
     name: "Sastra Durag",
     price: "रु 700",
-    imgUrl: "/accessories/acces1.png",
+    image: "/accessories/acces1.png",
     addedAt: "2025-05-30",
   },
   {
+    id: "sastra-ski-mask",
     name: "Sastra Ski Mask",
     price: "रु 600",
-    imgUrl: "/accessories/acces2.png",
+    image: "/accessories/acces2.png",
     addedAt: "2025-08-11",
   },
   {
+    id: "sastra-balaclava",
     name: "Sastra Balaclava",
     price: "रु 900",
-    imgUrl: "/accessories/acces3.png",
+    image: "/accessories/acces3.png",
     addedAt: "2025-7-23",
   },
 ];
@@ -31,7 +35,7 @@ export default function page() {
   };
 
   const handleSort = (option) => {
-    let sortedAccessories = [...initialAccessories];
+    let sortedAccessories = [...accessories];
 
     if (option === "Price: Low to High") {
       sortedAccessories.sort(
@@ -53,7 +57,7 @@ export default function page() {
 
   return (
     <>
-      <div className="min-h-screen px-6 py-10 bg-white text-black font-serif">
+      <div className="min-h-screen px-6 py-10 bg-black text-white font-serif">
         <h1 className="text-4xl font-bold text-center mb-6">Accessories</h1>
         <div className="text-lg font-semibold mb-4">
           Showing {accessories.length} results
@@ -66,7 +70,7 @@ export default function page() {
             <select
               value={sortOption}
               onChange={(e) => handleSort(e.target.value)}
-              className="border border-gray-300 rounded px-3 py-1 text-sm"
+              className="border border-gray-300 rounded px-3 py-1 text-sm bg-black text-white"
             >
               <option>Newest</option>
               <option>Price: Low to High</option>
@@ -76,15 +80,17 @@ export default function page() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {accessories.map((accessory, index) => (
-            <div key={index} className="text-center">
-              <img
-                src={accessory.imgUrl}
-                alt={accessory.name}
-                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-200 cursor-pointer rounded-lg"
-              />
-              <h2 className="font-semibold text-lg mt-4">{accessory.name}</h2>
-              <p className="text-gray-800">{accessory.price}</p>
+          {accessories.map((accessory) => (
+            <div key={accessory.id} className="text-center">
+              <Link href={`/collection/accessories/${accessory.id}`}>
+                <img
+                  src={accessory.image}
+                  alt={accessory.name}
+                  className="w-full h-auto object-cover hover:scale-105 transition-transform duration-200 cursor-pointer rounded-lg"
+                />
+                <h2 className="font-semibold text-lg mt-4">{accessory.name}</h2>
+                <p className="text-green-500">{accessory.price}</p>
+              </Link>
             </div>
           ))}
         </div>

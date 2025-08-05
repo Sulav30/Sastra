@@ -40,31 +40,31 @@ const initialTshirts = [
     addedAt: "2025-08-02",
   },
   {
-    id: "oversized-volume9-tee",
-    name: "Oversized Danfe Tee",
+    id: "oversized-vintage-royal-blue-tee",
+    name: "Oversized Vintage Royal Blue Tee",
     price: "रु 1,400",
-    imageUrl: "/t-shirts/tshirt1.jpg",
+    imageUrl: "/t-shirts/tshirt6.png",
     addedAt: "2025-08-01",
   },
   {
-    id: "oversized-volume8-tee",
-    name: "Oversized Danfe Tee",
+    id: "oversized-floweristic-tee",
+    name: "Oversized Floweristic Tee",
     price: "रु 1,400",
-    imageUrl: "/t-shirts/tshirt2.jpg",
+    imageUrl: "/t-shirts/tshirt7.png",
     addedAt: "2025-05-31",
   },
   {
-    id: "oversized-volume7-tee",
-    name: "Oversized Danfe Tee",
+    id: "oversized-spreading-love-tee",
+    name: "Oversized Spreading Love Tee",
     price: "रु 1,400",
-    imageUrl: "/t-shirts/tshirt3.jpg",
+    imageUrl: "/t-shirts/tshirt8.png",
     addedAt: "2025-05-15",
   },
   {
-    id: "oversized-volume6-tee",
-    name: "Oversized Danfe Tee",
+    id: "oversized-mount-clone-tee",
+    name: "Oversized Mount Clone Tee",
     price: "रु 1,400",
-    imageUrl: "/t-shirts/tshirt4.jpg",
+    imageUrl: "/t-shirts/tshirt9.jpg",
     addedAt: "2025-05-01",
   },
   {
@@ -133,7 +133,7 @@ export default function Page() {
   };
 
   return (
-    <div className="min-h-screen px-6 py-10 bg-white text-black font-serif ">
+    <div className="min-h-screen px-6 py-10 bg-black text-white font-serif ">
       <h1 className="text-4xl font-bold text-center mb-6">T-Shirts</h1>
 
       <div className="text-lg font-semibold mb-4">
@@ -147,7 +147,7 @@ export default function Page() {
           <select
             value={sortOption}
             onChange={(e) => handleSort(e.target.value)}
-            className="border border-gray-300 rounded px-3 py-1 text-sm"
+            className="border border-gray-300 rounded px-3 py-1 text-sm bg-black text-white"
           >
             <option>Newest</option>
             <option>Price: Low to High</option>
@@ -166,7 +166,7 @@ export default function Page() {
                 className="w-full object-cover hover:scale-110 transition-transform duration-200 cursor-pointer rounded-lg"
               />
               <h2 className="font-semibold text-lg mt-4">{shirt.name}</h2>
-              <p className="text-gray-800">{shirt.price}</p>
+              <p className="text-green-500">{shirt.price}</p>
             </Link>
           </div>
         ))}
