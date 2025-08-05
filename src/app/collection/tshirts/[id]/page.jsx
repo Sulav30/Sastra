@@ -87,7 +87,7 @@ const productDetails = {
   },
   "oversized-nature-beauty-tee": {
     name: "Oversized Nature & Beauty Tee",
-    price: "₹2,000",
+    price: "₹1,900",
     description: [
       "Shortsleeve crewneck tee.",
       "Digital graphics.",
@@ -107,7 +107,7 @@ const productDetails = {
   },
   "oversized-vintage-royal-blue-tee": {
     name: "Oversized Vintage Royal Blue Tee",
-    price: "₹1,400",
+    price: "₹1,450",
     description: [
       "Shortsleeve crewneck tee.",
       "Digital graphics.",
@@ -127,7 +127,7 @@ const productDetails = {
   },
   "oversized-floweristic-tee": {
     name: "Oversized Floweristic Tee",
-    price: "₹1,400",
+    price: "₹1,650",
     description: [
       "Shortsleeve crewneck tee.",
       "Digital graphics.",
@@ -147,7 +147,7 @@ const productDetails = {
   },
   "oversized-spreading-love-tee": {
     name: "Oversized Spreading Love Tee",
-    price: "₹1,400",
+    price: "₹1,500",
     description: [
       "Shortsleeve crewneck tee.",
       "Digital graphics.",
@@ -167,7 +167,7 @@ const productDetails = {
   },
   "oversized-mount-clone-tee": {
     name: "Oversized Mount Clone Tee",
-    price: "₹1,400",
+    price: "₹1,600",
     description: [
       "Shortsleeve crewneck tee.",
       "Digital graphics.",
@@ -185,9 +185,9 @@ const productDetails = {
       { size: "XXL", chest: "51-52", length: "29-30", sleeve: "10-11" },
     ],
   },
-  "oversized-volume5-tee": {
-    name: "Oversized Danfe Tee",
-    price: "₹1,400",
+  "oversized-green-cupid-tee": {
+    name: "Oversized Green Cupid Tee",
+    price: "₹1,550",
     description: [
       "Shortsleeve crewneck tee.",
       "Digital graphics.",
@@ -195,7 +195,7 @@ const productDetails = {
       "Made in Nepal.",
       "Cold wash recommended.",
     ],
-    image: "/t-shirts/tshirt5.jpg",
+    image: "/t-shirts/tshirt10.png",
     sizes: ["S", "M", "L", "XL", "XXL"],
     chart: [
       { size: "S", chest: "41-42", length: "25-26", sleeve: "7-7.5" },
@@ -205,9 +205,9 @@ const productDetails = {
       { size: "XXL", chest: "51-52", length: "29-30", sleeve: "10-11" },
     ],
   },
-  "oversized-volume4-tee": {
-    name: "Oversized Danfe Tee",
-    price: "₹1,400",
+  "oversized-messi-tee": {
+    name: "Oversized Lionel Messi Tee",
+    price: "₹2,050",
     description: [
       "Shortsleeve crewneck tee.",
       "Digital graphics.",
@@ -215,7 +215,7 @@ const productDetails = {
       "Made in Nepal.",
       "Cold wash recommended.",
     ],
-    image: "/t-shirts/tshirt2.jpg",
+    image: "/t-shirts/tshirt11.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     chart: [
       { size: "S", chest: "41-42", length: "25-26", sleeve: "7-7.5" },
@@ -225,9 +225,9 @@ const productDetails = {
       { size: "XXL", chest: "51-52", length: "29-30", sleeve: "10-11" },
     ],
   },
-  "oversized-volume3-tee": {
-    name: "Oversized Danfe Tee",
-    price: "₹1,400",
+  "oversized-jesus-tee": {
+    name: "Oversized Jesus Tee",
+    price: "₹2,200",
     description: [
       "Shortsleeve crewneck tee.",
       "Digital graphics.",
@@ -235,7 +235,7 @@ const productDetails = {
       "Made in Nepal.",
       "Cold wash recommended.",
     ],
-    image: "/t-shirts/tshirt3.jpg",
+    image: "/t-shirts/tshirt12.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     chart: [
       { size: "S", chest: "41-42", length: "25-26", sleeve: "7-7.5" },
@@ -245,9 +245,9 @@ const productDetails = {
       { size: "XXL", chest: "51-52", length: "29-30", sleeve: "10-11" },
     ],
   },
-  "oversized-volume2-tee": {
-    name: "Oversized Danfe Tee",
-    price: "₹1,400",
+  "oversized-holy-mother-tee": {
+    name: "Oversized Holy Mother Tee",
+    price: "₹2,200",
     description: [
       "Shortsleeve crewneck tee.",
       "Digital graphics.",
@@ -255,7 +255,7 @@ const productDetails = {
       "Made in Nepal.",
       "Cold wash recommended.",
     ],
-    image: "/t-shirts/tshirt1.jpg",
+    image: "/t-shirts/tshirt13.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     chart: [
       { size: "S", chest: "41-42", length: "25-26", sleeve: "7-7.5" },
@@ -265,9 +265,9 @@ const productDetails = {
       { size: "XXL", chest: "51-52", length: "29-30", sleeve: "10-11" },
     ],
   },
-  "oversized-volume1-tee": {
-    name: "Oversized Uncaged Tee",
-    price: "₹2,000",
+  "oversized-shree-ganesh-tee": {
+    name: "Oversized Shree Ganesh Tee",
+    price: "₹2,200",
     description: [
       "Shortsleeve crewneck tee.",
       "Digital graphics.",
@@ -275,7 +275,7 @@ const productDetails = {
       "Made in Nepal.",
       "Cold wash recommended.",
     ],
-    image: "/t-shirts/tshirt5.jpg",
+    image: "/t-shirts/tshirt14.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     chart: [
       { size: "S", chest: "41-42", length: "25-26", sleeve: "7-7.5" },
