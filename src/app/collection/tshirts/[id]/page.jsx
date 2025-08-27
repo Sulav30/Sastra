@@ -2,6 +2,7 @@
 import { ShoppingCart } from "lucide-react";
 import { useParams } from "next/navigation";
 import { useState } from "react";
+import products from "@/app/data/products";
 
 const productDetails = {
   "oversized-eagle-tee": {
@@ -292,6 +293,9 @@ export default function ProductDetail() {
   const id = params.id; // This will get the product id from the URL
 
   const product = productDetails[id];
+  // const { id } = useParams();
+
+  // const product = products.find((p) => p.id === id && p.category === "tshirts");
 
   if (!product) {
     return <p>Product not found</p>;
@@ -300,7 +304,9 @@ export default function ProductDetail() {
   // State to manage quantity and selected size
 
   const [quantity, setQuantity] = useState(1);
-  const [selectedSize, setSelectedSize] = useState(product.sizes[0]);
+  const [selectedSize, setSelectedSize] = useState(
+    product.sizes?.[0] || "One Size"
+  );
 
   const handleIncrease = () => setQuantity(quantity + 1);
   const handleDecrease = () => setQuantity(quantity > 1 ? quantity - 1 : 1);

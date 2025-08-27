@@ -10,29 +10,35 @@ library.add(fas, far, fab);
 export default function Footer() {
   return (
     <>
-      <footer className="flex  items-center justify-center p-4 gap-5 font-serif text-white bg-stone-500 w-full h-auto">
-        <p className="flex justify-center items-center">
-          2025 Sastra. All rights reserved.
-        </p>
-        <p className=" flex justify-center items-center gap-5 ">
+      <footer className=" relative flex  items-center justify-center px-5 py-4  font-serif text-white bg-stone-500">
+        <div className="flex gap-5 absolute left-1/2 transform -translate-x-1/2">
+          <span>2025 Sastra. All rights reserved.</span>
+
           <span className="hover:underline hover:text-black">
             <Link href="/policy/shipping-policy">Shipping Policy</Link>
           </span>
           <span className="hover:underline hover:text-black">
             <Link href="/policy/refund-policy">Refund Policy</Link>
           </span>
-        </p>
-        <div>
-          <Link href="https://www.facebook.com/">
-            <FontAwesomeIcon icon="fa-brands fa-facebook" />
-          </Link>
-          <Link href="https://www.instagram.com/">
-            <FontAwesomeIcon icon="fa-brands fa-instagram" />
-          </Link>
-          <Link href="https://www.whatsapp.com/">
+        </div>
+
+        <div className=" ml-auto  flex items-center gap-5 px-3 py-1 rounded-full ">
+          <Link href="https://www.facebook.com/" target="_blank">
             <FontAwesomeIcon
-              icon="fa-brands fa-whatsapp"
-              className="text-green-700"
+              icon={["fab", "facebook"]}
+              className="text-blue-700 h-5 w-5"
+            />
+          </Link>
+          <Link href="https://www.instagram.com/" target="_blank">
+            <FontAwesomeIcon
+              icon={["fab", "instagram"]}
+              className="h-5 w-5 text-pink-600"
+            />
+          </Link>
+          <Link href="https://www.whatsapp.com/" target="_blank">
+            <FontAwesomeIcon
+              icon={["fab", "whatsapp"]}
+              className="text-green-800 h-5 w-5"
             />
           </Link>
         </div>
