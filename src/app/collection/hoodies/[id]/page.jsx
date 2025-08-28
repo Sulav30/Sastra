@@ -91,7 +91,7 @@ const productDetails = {
       "100% super soft cotton fleece",
       "Heavyweight fabric",
     ],
-    image: "/hoodies/hoodie6.jpg",
+    image: "/hoodies/hoodie6.png",
     sizes: ["M", "L", "XL", "XXL"],
   },
   "oversized-sunset-vibe-hoodie": {
@@ -106,7 +106,7 @@ const productDetails = {
       "100% super soft cotton fleece",
       "Heavyweight fabric",
     ],
-    image: "/hoodies/hoodie7.jpg",
+    image: "/hoodies/hoodie7.png",
     sizes: ["M", "L", "XL", "XXL"],
   },
   "oversized-aquarius-hoodie": {
@@ -121,7 +121,7 @@ const productDetails = {
       "100% super soft cotton fleece",
       "Heavyweight fabric",
     ],
-    image: "/hoodies/hoodie8.jpg",
+    image: "/hoodies/hoodie8.png",
     sizes: ["M", "L", "XL", "XXL"],
   },
   "oversized-adventurous-hoodie": {
@@ -136,7 +136,7 @@ const productDetails = {
       "100% super soft cotton fleece",
       "Heavyweight fabric",
     ],
-    image: "/hoodies/hoodie9.jpg",
+    image: "/hoodies/hoodie9.png",
     sizes: ["M", "L", "XL", "XXL"],
   },
   "oversized-classic-red-hoodie": {

@@ -10,7 +10,7 @@ library.add(fas, far, fab);
 export default function Footer() {
   return (
     <>
-      <footer className=" relative flex  items-center justify-center px-5 py-4  font-serif text-white bg-stone-500">
+      <footer className="relative flex  items-center justify-center px-5 py-4  font-serif text-white bg-stone-500 w-full">
         <div className="flex gap-5 absolute left-1/2 transform -translate-x-1/2">
           <span>2025 Sastra. All rights reserved.</span>
 
@@ -22,23 +22,29 @@ export default function Footer() {
           </span>
         </div>
 
-        <div className=" ml-auto  flex items-center gap-5 px-3 py-1 rounded-full ">
+        <div className=" ml-auto  flex items-center gap-5 px-3 rounded-full ">
           <Link href="https://www.facebook.com/" target="_blank">
             <FontAwesomeIcon
               icon={["fab", "facebook"]}
-              className="text-blue-700 h-5 w-5"
+              className="hover:text-blue-700 h-5 w-5"
             />
           </Link>
           <Link href="https://www.instagram.com/" target="_blank">
             <FontAwesomeIcon
               icon={["fab", "instagram"]}
-              className="h-5 w-5 text-pink-600"
+              className="h-5 w-5 hover:text-pink-600"
             />
           </Link>
           <Link href="https://www.whatsapp.com/" target="_blank">
             <FontAwesomeIcon
               icon={["fab", "whatsapp"]}
-              className="text-green-800 h-5 w-5"
+              className="h-5 w-5 hover:text-green-900"
+            />
+          </Link>
+          <Link href="https://www.tiktok.com/" target="_blank">
+            <FontAwesomeIcon
+              icon={["fab", "tiktok"]}
+              className="h-5 w-5 hover:text-black"
             />
           </Link>
         </div>

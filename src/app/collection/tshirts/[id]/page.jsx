@@ -15,7 +15,7 @@ const productDetails = {
       "Made in Nepal.",
       "Cold wash recommended.",
     ],
-    image: "/t-shirts/tshirt1.jpg",
+    image: "/t-shirts/tshirt1.png",
     sizes: ["S", "M", "L", "XL", "XXL"],
     chart: [
       { size: "S", chest: "41-42", length: "25-26", sleeve: "7-7.5" },
@@ -35,7 +35,7 @@ const productDetails = {
       "Made in Nepal.",
       "Cold wash recommended.",
     ],
-    image: "/t-shirts/tshirt2.jpg",
+    image: "/t-shirts/tshirt2.png",
     sizes: ["S", "M", "L", "XL", "XXL"],
     chart: [
       { size: "S", chest: "41-42", length: "25-26", sleeve: "7-7.5" },
@@ -55,7 +55,7 @@ const productDetails = {
       "Made in Nepal.",
       "Cold wash recommended.",
     ],
-    image: "/t-shirts/tshirt3.jpg",
+    image: "/t-shirts/tshirt3.png",
     sizes: ["S", "M", "L", "XL", "XXL"],
     chart: [
       { size: "S", chest: "41-42", length: "25-26", sleeve: "7-7.5" },
@@ -76,7 +76,7 @@ const productDetails = {
       "Made in Nepal.",
       "Cold wash recommended.",
     ],
-    image: "/t-shirts/tshirt4.jpg",
+    image: "/t-shirts/tshirt4.png",
     sizes: ["S", "M", "L", "XL", "XXL"],
     chart: [
       { size: "S", chest: "41-42", length: "25-26", sleeve: "7-7.5" },
@@ -96,7 +96,7 @@ const productDetails = {
       "Made in Nepal.",
       "Cold wash recommended.",
     ],
-    image: "/t-shirts/tshirt5.jpg",
+    image: "/t-shirts/tshirt5.png",
     sizes: ["S", "M", "L", "XL", "XXL"],
     chart: [
       { size: "S", chest: "41-42", length: "25-26", sleeve: "7-7.5" },
@@ -176,7 +176,7 @@ const productDetails = {
       "Made in Nepal.",
       "Cold wash recommended.",
     ],
-    image: "/t-shirts/tshirt9.jpg",
+    image: "/t-shirts/tshirt9.png",
     sizes: ["S", "M", "L", "XL", "XXL"],
     chart: [
       { size: "S", chest: "41-42", length: "25-26", sleeve: "7-7.5" },
@@ -216,7 +216,7 @@ const productDetails = {
       "Made in Nepal.",
       "Cold wash recommended.",
     ],
-    image: "/t-shirts/tshirt11.jpg",
+    image: "/t-shirts/tshirt11.png",
     sizes: ["S", "M", "L", "XL", "XXL"],
     chart: [
       { size: "S", chest: "41-42", length: "25-26", sleeve: "7-7.5" },
@@ -236,7 +236,7 @@ const productDetails = {
       "Made in Nepal.",
       "Cold wash recommended.",
     ],
-    image: "/t-shirts/tshirt12.jpg",
+    image: "/t-shirts/tshirt12.png",
     sizes: ["S", "M", "L", "XL", "XXL"],
     chart: [
       { size: "S", chest: "41-42", length: "25-26", sleeve: "7-7.5" },
@@ -256,7 +256,7 @@ const productDetails = {
       "Made in Nepal.",
       "Cold wash recommended.",
     ],
-    image: "/t-shirts/tshirt13.jpg",
+    image: "/t-shirts/tshirt13.png",
     sizes: ["S", "M", "L", "XL", "XXL"],
     chart: [
       { size: "S", chest: "41-42", length: "25-26", sleeve: "7-7.5" },
@@ -276,7 +276,7 @@ const productDetails = {
       "Made in Nepal.",
       "Cold wash recommended.",
     ],
-    image: "/t-shirts/tshirt14.jpg",
+    image: "/t-shirts/tshirt14.png",
     sizes: ["S", "M", "L", "XL", "XXL"],
     chart: [
       { size: "S", chest: "41-42", length: "25-26", sleeve: "7-7.5" },

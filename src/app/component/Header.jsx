@@ -12,7 +12,6 @@ const satisfy = Satisfy({
 export default function Header({ onSearchResults }) {
   return (
     <div className="flex items-center justify-between p-3 bg-black  w-full fixed top-0 left-0 z-50">
-      {/* <Search className="text-white ml-5 cursor-pointer hover:text-pink-600" /> */}
       <SearchBar onSearchResults={onSearchResults} />
 
       <Link href="/" className="text-4xl text-pink-500 ">
