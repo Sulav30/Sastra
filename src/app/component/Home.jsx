@@ -32,9 +32,19 @@ const Home = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setItemsPerPage(window.innerWidth < 768 ? 1 : 3);
+      const width = window.innerWidth;
+      if (width < 640) {
+        setItemsPerPage(1); // Phones
+      } else if (width < 1024) {
+        setItemsPerPage(2); // Tablets
+      } else if (width < 1440) {
+        setItemsPerPage(3); // Laptops
+      } else {
+        setItemsPerPage(4); // Desktops
+      }
     };
-    handleResize(); // Initial call
+
+    handleResize(); // Initial setup
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -51,14 +61,21 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <img src="/home.png" alt="homecover" className="w-full mb-10" />
-      <h1 className="text-4xl mb-5 font-bold  text-center text-white">
+    <div className="px-4 sm:px-6 lg:px-10 py-6">
+      {/* Banner Image */}
+      <img
+        src="/home.png"
+        alt="Home cover"
+        className="w-full h-auto mb-10 rounded-lg object-cover"
+      />
+
+      {/* Title */}
+      <h1 className="text-3xl sm:text-4xl md:text-5xl mb-8 font-bold text-center text-white">
         Sastra 2025 Collection
       </h1>
 
       {/* Slider */}
-      <div className="relative overflow-hidden max-w-6xl mx-auto">
+      <div className="relative overflow-hidden max-w-screen-xl mx-auto">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{
@@ -76,17 +93,17 @@ const Home = () => {
             >
               <Link
                 href={`/collection/${product.category}/${product.id}`}
-                className="block rounded hover:shadow-md"
+                className="block rounded-lg hover:shadow-lg transition"
               >
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full mb-6 aspect-[1/1] object-contain rounded-bl-4xl rounded-tr-4xl hover:scale-110 transition-transform duration-200"
+                  className="w-full aspect-square object-contain rounded-bl-4xl rounded-tr-4xl hover:scale-105 transition-transform duration-300"
                 />
-                <h3 className=" font-semibold text-lg text-center">
+                <h3 className="mt-4 text-base sm:text-lg font-semibold text-center text-white">
                   {product.name}
                 </h3>
-                <p className="text-green-600 font-semibold text-center">
+                <p className="text-green-500 font-semibold text-center">
                   {product.price}
                 </p>
               </Link>
@@ -94,16 +111,18 @@ const Home = () => {
           ))}
         </div>
 
-        {/* Navigation */}
+        {/* Navigation buttons */}
         <button
           onClick={goToPrev}
-          className="absolute top-1/2 left-1 transform -translate-y-1/2 bg-pink-500 px-3 py-1 rounded-full shadow"
+          className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-pink-500 hover:bg-pink-600 text-white px-3 py-2 rounded-full shadow-md z-10"
+          aria-label="Previous"
         >
           ◀
         </button>
         <button
           onClick={goToNext}
-          className="absolute top-1/2 right-1 transform -translate-y-1/2 bg-pink-500 px-3 py-1 rounded-full shadow"
+          className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-pink-500 hover:bg-pink-600 text-white px-3 py-2 rounded-full shadow-md z-10"
+          aria-label="Next"
         >
           ▶
         </button>

@@ -2,6 +2,8 @@
 import { ShoppingCart } from "lucide-react";
 import { useParams } from "next/navigation";
 import { useState } from "react";
+import { useCart } from "@/app/context/CartContext";
+import { useRouter } from "next/navigation"; // Import useRouter for navigation
 
 const productDetails = {
   "oversized-galaxy-hoodie": {
@@ -160,6 +162,10 @@ export default function ProductDetail() {
   const params = useParams();
   const id = params.id;
 
+  const { addToCart } = useCart();
+
+  const router = useRouter(); // Initialize router
+
   const product = productDetails[id];
   if (!product) {
     return <p>Product not find</p>;
@@ -172,20 +178,17 @@ export default function ProductDetail() {
   const handleDecrease = () => setQuantity(quantity > 1 ? quantity - 1 : 1);
   const handleSizeChange = (size) => setSelectedSize(size);
 
-  const handleAddToCart = () => {
-    const newItem = {
+  // Handle checkout button click to navigate to checkout
+  const handleCheckout = () => {
+    addToCart({
+      id,
       name: product.name,
-      price: product.price,
+      image: product.image,
+      price: Number(product.price.replace(/[^0-9.-]+/g, "")), // Remove ₹ and convert to number
       size: selectedSize,
-      quantity: quantity,
-    };
-    addToCart(newItem);
-  };
-
-  const handleBuyNow = () => {
-    console.log(
-      `Proceeding to checkout with ${quantity} of ${product.name} (${selectedSize}).`
-    );
+      quantity,
+    });
+    router.push("/checkout"); // Navigate to checkout page
   };
 
   return (
@@ -242,7 +245,16 @@ export default function ProductDetail() {
 
           <div className="flex">
             <button
-              onClick={handleAddToCart}
+              onClick={() =>
+                addToCart({
+                  id,
+                  name: product.name,
+                  image: product.image,
+                  price: Number(product.price.replace(/[^0-9.-]+/g, "")), // Remove ₹ and convert to number
+                  size: selectedSize,
+                  quantity,
+                })
+              }
               className="bg-white text-black py-3  rounded-full w-55 cursor-pointer -ml-21 hover:bg-stone-600 hover:text-white"
             >
               <span className="flex items-center justify-center gap-3 text-lg">
@@ -256,7 +268,7 @@ export default function ProductDetail() {
         {/* Buy Now Buttons */}
         <div className="mt-5 ml-10">
           <button
-            onClick={handleBuyNow}
+            onClick={handleCheckout}
             className="bg-white text-black text-lg font-semibold px-6 py-3 -ml-10 rounded-full w-100 hover:bg-stone-600 hover:text-white cursor-pointer"
           >
             Buy now
