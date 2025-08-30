@@ -13,7 +13,7 @@ export default function CartItem({ item }) {
   };
 
   return (
-    <div className="flex items-start justify-between gap-4 border-b pb-4">
+    <div className="flex items-start justify-between gap-4 border-b pb-4 font-serif">
       {/* Image */}
       <div className="w-20 h-20 overflow-hidden rounded">
         <img

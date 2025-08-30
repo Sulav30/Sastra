@@ -41,7 +41,7 @@ export default function CartDrawer() {
 
   return (
     // Full screen backdrop
-    <div className="fixed inset-0 z-[999] flex justify-end">
+    <div className="fixed inset-0 z-[999] flex justify-end font-serif">
       {/* Cart Drawer */}
       <div
         ref={drawerRef}

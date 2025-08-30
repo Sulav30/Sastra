@@ -61,7 +61,7 @@ export default function CheckoutPage() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="max-w-5xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8 font-serif">
       {/* LEFT SIDE: FORM */}
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
@@ -234,7 +234,7 @@ export default function CheckoutPage() {
           type="submit"
           className="bg-blue-600 text-white font-semibold w-full p-3 rounded-xl hover:bg-blue-900 cursor-pointer"
         >
-          Pay now
+          PAYNOW
         </button>
       </form>
 

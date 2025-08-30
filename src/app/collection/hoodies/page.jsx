@@ -110,8 +110,8 @@ export default function page() {
         Showing {hoodies.length} results
       </div>
 
-      <div className="flex justify-between items-center mb-6">
-        <div></div> {/* placeholder for alignment */}
+      <div className="flex justify-between items-center mb-6 px-4 sm:px-6 lg:px-8">
+        <div className="flex-1"></div> {/* Placeholder for alignment */}
         <div className="text-sm font-medium flex items-center gap-2">
           <span>SORT BY</span>
           <select

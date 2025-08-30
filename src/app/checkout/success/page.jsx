@@ -7,7 +7,7 @@ export default function CheckoutSuccess() {
   const orderId = searchParams.get("o");
 
   return (
-    <div className="min-h-[70vh] flex flex-col items-center justify-center text-center px-6">
+    <div className="min-h-[70vh] flex flex-col items-center justify-center text-center px-6 font-serif">
       <div className="bg-black shadow-lg rounded-2xl p-8 max-w-lg w-full">
         <h1 className="text-2xl font-bold text-green-600 mb-4">
           🎉 WASSUP <span className="text-pink-500">SASTRA</span> FAM!

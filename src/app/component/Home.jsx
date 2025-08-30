@@ -61,12 +61,12 @@ const Home = () => {
   };
 
   return (
-    <div className="px-4 sm:px-6 lg:px-10 py-6">
+    <div className="">
       {/* Banner Image */}
       <img
         src="/home.png"
         alt="Home cover"
-        className="w-full h-auto mb-10 rounded-lg object-cover"
+        className="w-full h-auto mb-10 object-cover"
       />
 
       {/* Title */}
